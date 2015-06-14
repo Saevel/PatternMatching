@@ -5,9 +5,5 @@ package org.jug.patternmatching.task2
  */
 object fibonacci extends (Int => Int) {
 
-  def apply(n:Int):Int = n match {
-      case 0 => 1
-      case 1 => 2
-      case _ => (fibonacci(n-1)+fibonacci(n-2))
-  }
+  def apply(n:Int):Int = ???
 }

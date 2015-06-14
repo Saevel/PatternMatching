@@ -9,8 +9,5 @@ object ImpairNumber extends NumberParity;
  */
 object parityCheck extends (Int => NumberParity) {
 
-  def apply(n:Int):NumberParity = (n%2) match {
-      case 0 => PairNumber
-      case _ => ImpairNumber
-  }
+  def apply(n:Int):NumberParity = ???
 }
