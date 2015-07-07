@@ -18,3 +18,11 @@ addCommandAlias("taskTwo", "testOnly org.jug.patternmatching.task2.TaskTwoSpec")
 addCommandAlias("taskThree", "testOnly org.jug.patternmatching.task3.TaskThreeSpec")
 
 addCommandAlias("taskFour", "testOnly org.jug.patternmatching.task4.TaskFourSpec")
+
+addCommandAlias("task1", "testOnly org.jug.patternmatching.task1.TaskOneSpec")
+
+addCommandAlias("task2", "testOnly org.jug.patternmatching.task2.TaskTwoSpec")
+
+addCommandAlias("task3", "testOnly org.jug.patternmatching.task3.TaskThreeSpec")
+
+addCommandAlias("task4", "testOnly org.jug.patternmatching.task4.TaskFourSpec")

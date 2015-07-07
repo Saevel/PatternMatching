@@ -1,4 +1,4 @@
-package org.jug.patternmatching.task4
+package org.jug.patternmatching.task2
 
 import org.jug.patternmatching.task2.fibonacci
 import org.scalacheck.Prop._
@@ -11,13 +11,13 @@ object TaskTwoSpec extends Properties("TaskTwo - Fibonacci") {
 
   val smallIntBiggerThanTwo = Gen.choose(2, 10);
 
-  val first = Gen.const(0);
+  val one = Gen.const(0);
 
-  val second = Gen.const(1);
+  val two = Gen.const(1);
 
-  property("first") = forAll(first){(n) => fibonacci(n) == 1}
+  property("first") = forAll(one){(n) => fibonacci(n) == 1}
 
-  property("second") = forAll(second){(n) => fibonacci(n) == 2}
+  property("second") = forAll(two){(n) => fibonacci(n) == 2}
 
   property("recursive") = forAll(smallIntBiggerThanTwo){(n) => (fibonacci(n) == (fibonacci(n-1) + fibonacci(n-2)))}
 }
